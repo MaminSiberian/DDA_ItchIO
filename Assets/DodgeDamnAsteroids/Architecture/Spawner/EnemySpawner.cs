@@ -4,8 +4,8 @@ public class EnemySpawner : MonoBehaviour
 {
     [SerializeField] private float minTimeBtwSpawn;
     [SerializeField] private float maxTimeBtwSpawn;
-    [SerializeField] private int addEnemyStartSpawnChance;
-    [SerializeField] private int addSpawnChanceStep;
+    [SerializeField, Range(0, 100)] private int addEnemyStartSpawnChance;
+    [SerializeField, Range(0, 100)] private int addSpawnChanceStep;
 
     private int addEnemySpawnChance;
     private float timeBtwSpawn;

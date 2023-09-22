@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PoolableObject : MonoBehaviour
 {
-    protected float maxX = 3;
+    protected float maxX = 4;
     protected float maxY = 8;
 
     protected virtual void Update()

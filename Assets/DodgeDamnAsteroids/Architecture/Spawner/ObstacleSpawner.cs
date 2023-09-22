@@ -7,16 +7,16 @@ public class ObstacleSpawner : MonoBehaviour
     [SerializeField] private float timeBtwSpawn;
     [SerializeField] private List<Transform> _spawnPositions = new List<Transform>(4);
     [Header("Asteroids")]
-    [SerializeField] private int asterStartSpawnChance;
+    [SerializeField, Range(0, 100)] private int asterStartSpawnChance;
     [SerializeField] private float asterSpawnIncreaseStep;
     [Header("Extinguishers")]
-    [SerializeField] private int extingStartSpawnChance;
+    [SerializeField, Range(0, 100)] private int extingStartSpawnChance;
     [SerializeField] private float extingSpawnIncreaseStep;
     [Header("Fuel")]
-    [SerializeField] private int canisterStartSpawnChance;
+    [SerializeField, Range(0, 100)] private int canisterStartSpawnChance;
     [SerializeField] private float canisterSpawnIncreaseStep;
     [Header("Hearts")]
-    [SerializeField] private int heartStartSpawnChance;
+    [SerializeField, Range(0, 100)] private int heartStartSpawnChance;
     [SerializeField] private float heartSpawnIncreaseStep;
 
     public static List<Transform> spawnPositions { get; private set; }
